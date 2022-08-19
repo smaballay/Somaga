@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/Icono.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Roboto:wght@300;400;500;700&display=swap');</style>
     <title>Somaga - Contacto</title>
@@ -53,7 +54,7 @@
 
         <section class="section3">
             <div class="container-form">
-                <form class="form">
+                <form class="form" data-aos="zoom-in">
                     <input class="input" type="text" placeholder="Ingrese su nombre*">
                     <input class="input" type="text" placeholder="Ingrese su apellido*">
                     <input class="input" type="text" placeholder="Ingrese su mail*">
@@ -97,5 +98,9 @@
             <p>Desarrollado por <a href="https://www.linkedin.com/in/smaballay" target="_blank">Sofía Aballay</a>
 	    </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration: 1000});
+    </script>
 </body>
 </html>

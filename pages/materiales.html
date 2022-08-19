@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/Icono.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Roboto:wght@300;400;500;700&display=swap');</style>
     <title>Somaga - Materiales</title>
@@ -50,7 +51,7 @@
             <p>Cada una tiene sus ventajas y desventajas, pero no te preocupes que estamos nosotros para asesorarte.</p>
         </section>
         
-        <section class="section3-materiales">
+        <section class="section3-materiales" data-aos="fade-right">
             <img class="imagen-materiales" src="../images/Materiales/FDM.png" alt="Impresora FDM">
             <div class="texto-materiales">
                 <h2 class="letra-neon">Impresión con filamento</h2>
@@ -60,7 +61,7 @@
             </div>
         </section>
         
-        <section class="section4-materiales">
+        <section class="section4-materiales" data-aos="fade-left">
             <div class="texto-materiales">
                 <h2 class="letra-neon">Impresión con resina</h2>
                 <p>Se utilizan impresoras SLA que curan la resina líquida capa por capa por medio de luz UV.</p> 
@@ -71,7 +72,7 @@
             <img class="imagen-materiales"src="../images/Materiales/SLA.png" alt="Impresora SLA">
         </section>
 
-        <section class="section5-materiales">
+        <section class="section5-materiales" data-aos="zoom-in">
             <h2 class="letra-neon">Wow wow wow! Entonces que me conviene?</h2>
                 <p>No te preocupes, nosotros nos encargamos de combinar ambas para obtener un producto de calidad!</p>
                 <p>Por eso, te invitamos a ver nuestro trabajo</p>
@@ -101,5 +102,9 @@
             <p>Desarrollado por <a href="https://www.linkedin.com/in/smaballay" target="_blank">Sofía Aballay</a>
 	    </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration: 1000});
+    </script>
 </body>
 </html>

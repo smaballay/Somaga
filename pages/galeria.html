@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/Icono.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Roboto:wght@300;400;500;700&display=swap');</style>
     <title>Somaga - Galería</title>
@@ -54,19 +55,19 @@
 
         <section class="section3">
             <div class="container-card">
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <img src="../images/Figuras/Spiderman/Spiderman_1.jpg" alt="Figura Spiderman">
                     <h3>SPIDERMAN</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <img src="../images/Figuras/Hisoka/Hisoka_1.jpg" alt="Figura Hisoka">
                     <h3>HISOKA</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <img src="../images/Figuras/Cyclops/Cyclops_1.jpg" alt="Figura Cyclops">
                     <h3>CYCLOPS</h3>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <img src="../images/Figuras/Leon-O/Leon-O_1.jpg" alt="Figura Leon-O">
                     <h3>LEON-O</h3>
                 </div>
@@ -96,5 +97,9 @@
             <p>Desarrollado por <a href="https://www.linkedin.com/in/smaballay" target="_blank">Sofía Aballay</a>
 	    </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration: 1000});
+    </script>
 </body>
 </html>
