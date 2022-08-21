@@ -126,6 +126,7 @@ p b{
 /*main background style*/
 .main{
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(32,0,121,1) 25%, rgb(56, 0, 129) 50%, rgb(106, 0, 133) 75%, rgba(162,112,148,1) 99%, rgba(0,0,0)100%);
+    overflow-x: hidden;
 }
 
 /*footer style*/
