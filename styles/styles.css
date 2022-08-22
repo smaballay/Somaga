@@ -308,4 +308,9 @@ p b{
     .section2-inicio img{
         height: 7rem;
     }
+
+    /*FORMULARIO*/
+    .form{
+        width: 25rem;
+    }
 }
