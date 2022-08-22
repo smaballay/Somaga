@@ -6,34 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/Icono.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Roboto:wght@300;400;500;700&display=swap');</style>
     <title>Somaga - Contacto</title>
 </head>
-<body class="grid-container">
+<body class="body">
     <!--header con logo y nav-->
     <header class="header">
-        <a href="../index.html"><img src="../images/Logo_letra.png" alt="logo Somaga"></a>
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a href="../index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="./materiales.html">MATERIALES</a>
-                </li>
-                <li>
-                    <a href="./galeria.html">GALERIA</a>
-                </li>
-                <li>
-                    <a href="./catalogo.html">CATALOGO</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a href="../index.html"><img class="header-logo" src="../images/Logo_letra.png" alt="logo Somaga"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./materiales.html">MATERIALES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">GALERIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./catalogo.html">CATALOGO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+    </header> 
 
     <!--Formulario-->
     <main class="main">
@@ -53,26 +62,34 @@
         </section>
 
         <section class="section3">
-            <div class="container-form">
-                <form class="form" data-aos="zoom-in">
-                    <input class="input" type="text" placeholder="Ingrese su nombre*">
-                    <input class="input" type="text" placeholder="Ingrese su apellido*">
-                    <input class="input" type="text" placeholder="Ingrese su mail*">
-                    <input class="input" type="number" placeholder="Ingrese su número de celular">
-                    <textarea placeholder="Mensaje*"></textarea>
-                    <p class="form-obligatorio">* los campos son obligatorios.</p>
-                    <div>
-                        <label for="novedades">Deseo recibir novedades por mail </label>
-                        <input type="checkbox">
-                    </div>
-                    <div>
-                        <button class="button-form">
-                            <span class="button-form-text1">ENVIAR</span>
-                            <span class="button-form-text2">GRACIAS!</span>
-                        </button>
-                    </div>
-                </form>    
-            </div>
+            <form class="container-form" data-aos="zoom-in">
+                <div class="mb-3">
+                    <input type="text" placeholder="Ingrese su nombre(*)" class="form-control mb-3" id="floatingTextarea2">
+                </div>
+                <div class="mb-3">
+                    <input type="text" placeholder="Ingrese su apellido(*)" class="form-control mb-3" id="floatingTextarea2">
+                </div>
+                <div class="mb-3">
+                    <input type="mail" placeholder="Ingrese su mail(*)" class="form-control mb-3" id="floatingTextarea2">
+                </div>
+                <div class="mb-3">
+                    <input type="number" placeholder="Ingrese su número de celular" class="form-control b-3" id="floatingTextarea2">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" placeholder="Mensaje(*)" id="floatingTextarea2" style="height: 150px"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="formFileMultiple" class="form-label">Si querés, podés mandarnos fotos referenciales</label>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                </div>
+                <div id="emailHelp" class="form-text">(*) los campos son obligatorios.</div>
+                <div>
+                    <button type="submit" class="button-form">
+                        <span class="button-form-text1">ENVIAR</span>
+                        <span class="button-form-text2">GRACIAS!</span>
+                    </button>
+                </div>
+            </form>
         </section>
         
         <section class="section-final">
@@ -98,6 +115,7 @@
             <p>Desarrollado por <a href="https://www.linkedin.com/in/smaballay" target="_blank">Sofía Aballay</a>
 	    </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({duration: 1000});
