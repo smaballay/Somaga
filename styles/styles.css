@@ -76,6 +76,7 @@ p b{
     text-decoration: none;
     color: #ffffff;
     transition: all 0.5s ease;
+    margin: 1rem;
 }
 .navbar ul li a:hover{
     font-weight: bold;
@@ -154,16 +155,16 @@ p b{
 
 /*INICIO*/
 .section1 img{
-    max-height: 17rem;
+    width: 25rem;
 }
 .section1-texto{
     max-width: 35rem;
 }
 .section2-logos{
-    max-width: 11rem;
+    max-width: 13rem;
 }
 .section2-logos img{
-    height: 6rem;
+    height: 8rem;
 }
 
 /*MATERIALES*/
@@ -197,7 +198,6 @@ p b{
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     font-size: 1rem;
     overflow: hidden;
-    cursor: pointer;
     position: relative;
     letter-spacing: 0.1rem;
     transition: all 0.5s ease;
@@ -230,13 +230,5 @@ p b{
 @media screen and (min-width: 1740px){
     .section-final img{
         width: 100%;
-    }
-}
-
-/*Screen Desktop*/
-@media screen and (min-width: 992px){
-    /*INICIO*/
-    .section1 img{
-        max-height: 23rem;
     }
 }
