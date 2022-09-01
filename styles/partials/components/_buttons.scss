@@ -1,0 +1,57 @@
+/*GENERAL BUTTON STYLE*/
+.button{
+    background-color: $bg-button;
+    color: rgb(0,0,0);
+    border-radius: 2rem;
+    border: none;
+    padding: 0.75rem;
+    margin: 1rem;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    transition: all 0.5s ease;
+    &:hover{
+        @include shadow(rgb(0,0,0));
+        background: map-get($bg-gradient, hover);
+        color: $text-color;
+        letter-spacing: 0.3rem;
+    }
+}
+
+/*FORM BUTTON STYLE*/
+.button-form{
+    @extend .button;
+    @include shadow(rgb(0,0,0));
+    background: map-get($bg-gradient, hover);
+    color: $text-color;
+    width: 7rem;
+    height: 3rem;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+    &:hover{
+        letter-spacing: 0.1rem;    
+    }
+    span{
+        transition: top 0.5s;
+    }
+}
+.button-form-text1{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.button-form-text2{
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.button-form:hover .button-form-text1 {
+    top: -100%;
+}  
+.button-form:hover .button-form-text2 {
+    top: 50%;
+}

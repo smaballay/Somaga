@@ -1,234 +1,277 @@
-/* general style*/
-body{
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    text-align: center;
-}
-/*text*/
-h1{
-    font-size: 3rem;
-    padding: 1rem;
-}
-h2{
-    font-size: 2rem;
-    padding: 1rem;
-}
-h3{
-    font-size: 1rem;
-    padding: 1rem;
-}
-p{
-    font-size: 1.3rem;
-}
-p b{
-    color: #97fdf8;
-    text-shadow:
-        0 0 5px rgb(0, 238, 255),
-	    0 0 15px rgb(38, 114, 127);
-}
-.letra-neon{
-    font-family: 'Lobster Two', cursive;
-    color: #ffbbfc;
-    font-weight: bold;
-    text-shadow:
-        0 0 5px rgb(204, 0, 255),
-	    0 0 10px rgb(204, 0, 255),
-	    0 0 35px rgb(102, 38, 127),
-	    0 0 40px rgb(102, 38, 127);
-}
-/*buttons*/
-.button{
-    padding: 0.75rem;
-    margin: 1rem;
-    border-radius: 2rem;
-    border: none;
-    background-color: #ffffff;
-    font-size: 1rem;
-    letter-spacing: 0.1em;
-    transition: all 0.5s ease;
-}
-.button:hover{
-    background: linear-gradient(90deg, rgba(58,9,121,1) 0%, rgba(102, 38, 127) 0%, rgba(204, 0, 255) 95%);
-    letter-spacing: 0.3rem;
-    box-shadow: 0 0 2rem #000000;
-    color: #ffffff;
-}
-/*cards*/
-.card{
-    width: 18rem;
-    border: none;
-    margin: 1rem;
-    background: linear-gradient(90deg,rgba(29,0,117,1) 0%, rgba(89,0,182,1) 50%, rgba(147,56,219,1) 100%);
-    transition: all 0.25s ease-in;
-}
-.card:hover{
-    box-shadow: 0 0 2rem #000000;
+/*TEXT VARIABLES*/
+/*BACKGROUND VARIABLES*/
+/*GRADIENT BACKGROUND VARIABLES*/
+/*SHADOW STYLE*/
+/*NEON TITLE STYLE*/
+/*NEON BOLD PARAGRAPH STYLE*/
+/*FLEX-BOX*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
-/*header and navbar style*/
-.header-logo{
-    max-height: 3rem ;
-}
-.navbar{
-    background-color: #000000;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: #ffffff;
-    transition: all 0.5s ease;
-    margin: 1rem;
-}
-.navbar ul li a:hover{
-    font-weight: bold;
-    color: #eab5ff;
-    text-shadow:
-        0 0 5px rgb(204, 0, 255),
-        0 0 10px rgb(204, 0, 255),
-        0 0 35px rgb(102, 38, 127),
-        0 0 40px rgb(102, 38, 127);
+h1 {
+  font-size: 3rem;
+  padding: 1rem;
 }
 
-/*main background style*/
-.main{
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(32,0,121,1) 25%, rgb(56, 0, 129) 50%, rgb(106, 0, 133) 75%, rgba(162,112,148,1) 99%, rgba(0,0,0)100%);
+h2 {
+  font-size: 2rem;
+  padding: 1rem;
 }
 
-/*footer style*/
-.footer{
-    background-color: #000000;
-    padding: 1rem;
-}
-.footer h3{
-    font-family: 'Lobster Two', cursive;
-    font-size: 2rem;
-    font-weight: bold;
-}
-.redes-sociales a{
-    margin: 0.25rem;
-    text-decoration: none;
-}
-.redes-sociales a img{
-    height: 2.2rem;
-}
-.copyright{
-    padding-top: 5rem;
-}
-.copyright a{
-    font-weight: bold;
-    text-decoration: none;
-    color: #ffffff;
-}
-.copyright p{
-	font-size: 0.75rem;
-    margin: 0;
-}
-      
-/*SECTIONS*/
-.section1{
-    background-image: radial-gradient(circle at 37% 70%, rgb(44, 7, 175) 0%, rgba(0,0,0,1) 100%);
-    position: relative;
-    padding: 2rem 1rem 5rem; 
-}
-.section1 .wave{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-.section2{
-    background: linear-gradient(rgba(0,0,0) 75%, rgba(0,0,0,0) 100%);
-    padding: 3rem 1rem 6rem;
-}
-.section2 a{
-    text-decoration: none;
-}
-.section2 p{
-    margin: 0;
-}
-.section4{
-    background-color: #00000070;
-}
-.section-final{
-    height: 12rem;
-    padding: 0;
+h3 {
+  font-size: 1rem;
+  padding: 1rem;
 }
 
-/*INICIO*/
-.section1 img{
-    width: 25rem;
+p {
+  font-size: 1.3rem;
 }
-.section1-texto{
-    max-width: 35rem;
-}
-.section2-logos{
-    max-width: 13rem;
-}
-.section2-logos img{
-    height: 8rem;
+p b {
+  color: rgb(151, 253, 248);
+  text-shadow: 0 0 5px rgb(0, 238, 255), 0 0 15px rgb(38, 114, 127);
 }
 
-/*MATERIALES*/
-.imagen-materiales{
-    border-radius: 2rem;
-    box-shadow: 0 0 2rem rgb(226, 66, 218);
-    overflow: hidden;
-    max-width: 22rem;
-    margin: 1rem;
-}
-.texto-materiales{
-    padding: 1rem;
-    max-width: 30rem;
+.letra-neon {
+  font-family: "Lobster Two", cursive;
+  font-weight: bold;
+  color: rgb(255, 187, 252);
+  text-shadow: 0 0 5px rgb(204, 0, 255), 0 0 10px rgb(204, 0, 255), 0 0 35px rgb(102, 38, 127), 0 0 40px rgb(102, 38, 127);
 }
 
-/*FORMULARIO*/
-.container-form{
-    background-color: #00000070;
-    padding: 1.5rem;
-    border-radius: 1.5rem;
+/*GENERAL BUTTON STYLE*/
+.button, .button-form {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 2rem;
+  border: none;
+  padding: 0.75rem;
+  margin: 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  transition: all 0.5s ease;
 }
-.button-form{
-    width: 7rem;
-    height: 3rem;
-    padding: 0.75rem;
-    margin: 1rem;
-    border-radius: 2rem;
-    border: none;
-    background: linear-gradient(90deg, rgba(58,9,121,1) 0%, rgba(102, 38, 127) 0%, rgba(204, 0, 255) 95%);
-    color: #ffffff;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    font-size: 1rem;
-    overflow: hidden;
-    position: relative;
-    letter-spacing: 0.1rem;
-    transition: all 0.5s ease;
+.button:hover, .button-form:hover {
+  box-shadow: 0 0 2rem rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(58, 9, 121) 0%, rgb(102, 38, 127) 0%, rgb(204, 0, 255) 95%);
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.3rem;
 }
-.button-form span{
-    transition: top 0.5s;
+
+/*FORM BUTTON STYLE*/
+.button-form {
+  box-shadow: 0 0 2rem rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(58, 9, 121) 0%, rgb(102, 38, 127) 0%, rgb(204, 0, 255) 95%);
+  color: rgb(255, 255, 255);
+  width: 7rem;
+  height: 3rem;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease;
 }
-.button-form-text1{
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+.button-form:hover {
+  letter-spacing: 0.1rem;
 }
-.button-form-text2{
-    position: absolute;
-    width: 100%;
-    top: 150%;
-    left: 0;
-    transform: translateY(-50%);
+.button-form span {
+  transition: top 0.5s;
 }
+
+.button-form-text1 {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.button-form-text2 {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
 .button-form:hover .button-form-text1 {
-    top: -100%;
-}  
+  top: -100%;
+}
+
 .button-form:hover .button-form-text2 {
-    top: 50%;
+  top: 50%;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: linear-gradient(90deg, rgb(29, 0, 117) 0%, rgb(89, 0, 182) 50%, rgb(147, 56, 219) 100%);
+  width: 18rem;
+  border: none;
+  margin: 1rem;
+  transition: all 0.25s ease-in;
+}
+.card:hover {
+  box-shadow: 0 0 2rem rgb(0, 0, 0);
+}
+
+.header-logo {
+  max-height: 3rem;
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0);
+}
+.navbar ul li {
+  list-style-type: none;
+}
+.navbar ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.navbar ul li a:hover {
+  font-family: "Lobster Two", cursive;
+  font-weight: bold;
+  color: rgb(255, 187, 252);
+  text-shadow: 0 0 5px rgb(204, 0, 255), 0 0 10px rgb(204, 0, 255), 0 0 35px rgb(102, 38, 127), 0 0 40px rgb(102, 38, 127);
+}
+
+.main {
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(32, 0, 121) 25%, rgb(56, 0, 129) 50%, rgb(106, 0, 133) 75%, rgb(162, 112, 148) 99%, rgb(0, 0, 0) 100%);
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  padding: 1rem;
+}
+.footer h3 {
+  font-family: "Lobster Two", cursive;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.redes-sociales a {
+  margin: 0.25rem;
+  text-decoration: none;
+}
+.redes-sociales a img {
+  height: 2.2rem;
+}
+
+.copyright {
+  padding-top: 5rem;
+}
+.copyright a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
+}
+.copyright p {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.section1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(circle at 37% 70%, rgb(44, 7, 175) 0%, rgb(0, 0, 0) 100%);
+  position: relative;
+  padding: 2rem 1rem 5rem;
+}
+.section1 img {
+  width: 25rem;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
+  padding: 3rem 1rem 6rem;
+}
+.section2 a {
+  text-decoration: none;
+}
+.section2 p {
+  margin: 0;
+}
+
+.section3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.section-final {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  overflow-x: hidden;
+  height: 12rem;
+  padding: 0;
 }
 
 /*Final Section Image Responsive*/
-@media screen and (min-width: 1740px){
-    .section-final img{
-        width: 100%;
-    }
+@media screen and (min-width: 1740px) {
+  .section-final img {
+    width: 100%;
+  }
 }
+.section1-texto {
+  max-width: 35rem;
+}
+
+.section2-logos {
+  max-width: 13rem;
+}
+.section2-logos img {
+  height: 8rem;
+}
+
+.imagen-materiales {
+  max-width: 22rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin: 1rem;
+  box-shadow: 0 0 2rem rgb(226, 66, 218);
+}
+
+.texto-materiales {
+  padding: 1rem;
+  max-width: 30rem;
+}
+
+.container-form {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}/*# sourceMappingURL=styles.css.map */

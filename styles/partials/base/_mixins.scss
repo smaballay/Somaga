@@ -1,0 +1,32 @@
+/*SHADOW STYLE*/
+@mixin shadow($color){
+    box-shadow: 0 0 2rem $color;
+}
+
+/*NEON TITLE STYLE*/
+@mixin neon-title{
+    font-family: $font-secondary;
+    font-weight: bold;
+    color: rgb(255, 187, 252);
+    text-shadow:
+        0 0 5px rgb(204, 0, 255),
+        0 0 10px rgb(204, 0, 255),
+        0 0 35px rgb(102, 38, 127),
+        0 0 40px rgb(102, 38, 127);
+}
+
+/*NEON BOLD PARAGRAPH STYLE*/
+@mixin neon-paragraph{
+    color: rgb(151, 253, 248);
+    text-shadow:
+        0 0 5px rgb(0, 238, 255),
+        0 0 15px rgb(38, 114, 127);
+}
+
+/*FLEX-BOX*/
+@mixin flex($justify, $align){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+}

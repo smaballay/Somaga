@@ -1,0 +1,4 @@
+@import "./partials/base/maps.scss", "./partials/base/mixins", "./partials/base/reset", "./partials/base/typography";
+@import "./partials/components/buttons", "./partials/components/cards";
+@import "./partials/layout/header-navbar", "./partials/layout/main", "./partials/layout/footer";     
+@import "./partials/pages/sections", "./partials/pages/inicio", "./partials/pages/materiales", "./partials/pages/contacto";

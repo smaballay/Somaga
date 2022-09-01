@@ -1,0 +1,30 @@
+.footer{
+    background-color: $bg-primary;
+    padding: 1rem;
+    h3{ 
+        font-family: $font-secondary;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+.redes-sociales{
+    a{
+        margin: 0.25rem;
+        text-decoration: none;
+        img{
+            height: 2.2rem;
+        }
+    }
+}
+.copyright{
+    padding-top: 5rem;
+    a{
+        color: $text-color;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    p{ 
+        font-size: 0.75rem;
+        margin: 0;
+    }
+}  

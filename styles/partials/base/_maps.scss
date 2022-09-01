@@ -1,0 +1,19 @@
+/*TEXT VARIABLES*/
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Lobster Two', cursive;
+$text-alignment: center;
+$text-color: rgb(255, 255, 255);
+
+/*BACKGROUND VARIABLES*/
+$bg-button: rgb(255, 255, 255);
+$bg-primary: rgb(0, 0, 0);
+$bg-primary-light: rgba(0, 0, 0, 0.7);
+
+/*GRADIENT BACKGROUND VARIABLES*/
+$bg-gradient:(
+    main: linear-gradient(180deg, rgb(0,0,0) 0%, rgb(32,0,121) 25%, rgb(56, 0, 129) 50%, rgb(106, 0, 133) 75%, rgb(162,112,148) 99%, rgb(0,0,0)100%),
+    hover: linear-gradient(90deg, rgb(58,9,121) 0%, rgb(102, 38, 127) 0%, rgb(204, 0, 255) 95%),
+    card: linear-gradient(90deg,rgb(29,0,117) 0%, rgb(89,0,182) 50%, rgb(147,56,219) 100%),
+    section1: radial-gradient(circle at 37% 70%, rgb(44, 7, 175) 0%, rgb(0,0,0) 100%),
+    section2: linear-gradient(rgb(0,0,0) 75%, rgba(0,0,0,0) 100%)
+);

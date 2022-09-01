@@ -1,0 +1,11 @@
+.imagen-materiales{
+    max-width: 22rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 1rem;
+    @include shadow(rgb(226, 66, 218));
+}
+.texto-materiales{
+    padding: 1rem;
+    max-width: 30rem;
+}

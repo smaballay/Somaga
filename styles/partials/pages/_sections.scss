@@ -1,0 +1,45 @@
+.section1{
+    @include flex(center, center);
+    background-image: map-get($bg-gradient, section1);
+    position: relative;
+    padding: 2rem 1rem 5rem; 
+    img{
+        width: 25rem;
+    }
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.section2{
+    @include flex(space-evenly, center);
+    background: map-get($bg-gradient, section2);
+    padding: 3rem 1rem 6rem;
+    a{
+        text-decoration: none;
+    }
+    p{
+        margin: 0;
+    }
+}
+.section3{
+    @include flex(center, center);
+}
+.section4{
+    @include flex(center, center);
+    background-color: $bg-primary-light;
+}
+.section-final{
+    @include flex(center,flex-end);
+    overflow-x: hidden;
+    height: 12rem;
+    padding: 0;
+}
+/*Final Section Image Responsive*/
+@media screen and (min-width: 1740px){
+    .section-final img{
+        width: 100%;
+    }
+}
