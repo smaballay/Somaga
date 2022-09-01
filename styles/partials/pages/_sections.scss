@@ -29,6 +29,7 @@
 }
 .section4{
     @include flex(center, center);
+    overflow-x: hidden;
     background-color: $bg-primary-light;
 }
 .section-final{
