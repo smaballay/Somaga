@@ -17,5 +17,6 @@ p{
     }
 }
 .letra-neon{
+    font-family: $font-secondary;
     @include neon-title;    
 }
