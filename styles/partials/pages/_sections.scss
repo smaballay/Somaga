@@ -14,7 +14,6 @@
     width: 100%;
 }
 .section2{
-    @include flex(space-evenly, center);
     background: map-get($bg-gradient, section2);
     padding: 3rem 1rem 6rem;
     a{
@@ -23,6 +22,10 @@
     p{
         margin: 0;
     }
+}
+.section2-inicio{
+    @extend .section2;
+    @include flex(space-evenly, center);
 }
 .section3{
     @include flex(center, center);
