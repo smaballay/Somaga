@@ -27,12 +27,7 @@
     @extend .section2;
     @include flex(space-evenly, center);
 }
-.section3{
-    @include flex(center, center);
-}
 .section4{
-    @include flex(center, center);
-    overflow-x: hidden;
     background-color: $bg-primary-light;
 }
 .section-final{
@@ -43,7 +38,9 @@
 }
 /*Final Section Image Responsive*/
 @media screen and (min-width: 1740px){
-    .section-final img{
-        width: 100%;
+    .section-final{
+        img{
+            width: 100%;
+        } 
     }
 }
