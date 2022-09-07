@@ -3,6 +3,8 @@
 }
 .card{
     background: map-get($bg-gradient, card);
+    border-radius: 1rem;
+    overflow: hidden;
     width: 18rem;
     border: none;
     margin: 1rem;

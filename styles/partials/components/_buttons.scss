@@ -1,7 +1,7 @@
 /*GENERAL BUTTON STYLE*/
 .button{
     background-color: $bg-button;
-    color: rgb(0,0,0);
+    color: $text-color-secondary;
     border-radius: 2rem;
     border: none;
     padding: 0.75rem;
@@ -54,4 +54,24 @@
 }  
 .button-form:hover .button-form-text2 {
     top: 50%;
+}
+
+/*CARD BUTTON STYLE*/
+.button-card{
+    background-color: $bg-button-light;
+    color: $text-color-secondary;
+    border-radius: 2rem;
+    border: none;
+    padding: 0.35rem;    
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    svg{
+        width: 1rem;
+    }
+    &:hover{
+        background-color: $bg-button;
+        color: $text-color-secondary;
+        letter-spacing: 0.1rem;
+    }
 }
